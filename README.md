@@ -151,6 +151,6 @@ The project is organized into two main folders:
 *   **Error Handling Robustness:** Enhance error display and recovery mechanisms on both frontend and backend.
 *   **Real Product Data:** Integrate with an actual E-commerce API to fetch and display real product information instead of mock data.
 *   **State Management:** For larger applications or if using a framework like React, more robust state management solutions would be beneficial.
-*   **Deployment:** Instructions for deploying the backend (e.g., Docker, cloud platforms) and frontend.
+*   **Deployment:** Instructions for deploying the backend and frontend.
 
 ---
