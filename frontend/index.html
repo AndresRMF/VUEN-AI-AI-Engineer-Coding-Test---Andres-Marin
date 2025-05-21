@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice E-commerce Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice E-commerce Agent</h1>
+        <div class="controls">
+            <button id="startButton">Start Session</button>
+            <button id="stopButton" disabled>Stop Session</button>
+            <button id="audioToggleButton" disabled>Pause Audio Input</button> 
+            <button id="clearConversationButton" disabled>Clear Conversation</button>
+        </div>
+        <div class="mic-volume-feedback">
+            <label for="micVolumeMeter">Mic Volume:</label>
+            <div id="micVolumeMeter">
+                <div id="micVolumeBar"></div>
+            </div>
+        </div>
+        <div class="output-area">
+            <h2>Status:</h2>
+            <p id="statusMessage">Idle. Click "Start Session".</p>
+
+            <h2>Live Transcript:</h2>
+            <p id="interimTranscript" style="color: gray; min-height: 1.2em;"></p>
+            <div class="transcript-header">
+                <button id="copyTranscriptButton" disabled>Copy Transcript</button>
+            </div>
+            <div id="transcriptOutput" class="output-box">
+            </div>
+
+            <h2>Function Call Results:</h2>
+            <div id="functionCallOutput" class="output-box">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
